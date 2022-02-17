@@ -1,0 +1,350 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    background-color: #FEFDFD;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 3px;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    backdrop-filter: blur(5px);
+    
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+    
+}
+
+
+header li{
+    
+    color: #519259;
+    
+}
+
+
+
+
+
+
+
+.textPrincipal{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.containerStory{
+    display: flex;
+    align-items: center;
+    min-height: 125px;
+    overflow: auto;
+    margin-top: 10px;
+    gap: 10px;
+
+    
+    
+   
+   
+}
+
+
+
+.storiesImg{
+    width: 75px;
+    height: 75px;
+    background-color: grey;
+    border-radius: 50%;
+    
+    
+    
+}
+
+.storiesimgLive{
+    width: 75px;
+    height: 75px;
+    background-color: grey;
+    border-radius: 50%;
+    border: 2px solid #7A2E15;
+    
+    
+    
+}
+
+.storiesimgRediffusion{
+    width: 75px;
+    height: 75px;
+    background-color: grey;
+    border-radius: 50%;
+    border: 2px solid #21527C;
+    
+    
+    
+}
+
+.storiesimgRediffusion img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+    
+    
+    
+}
+
+
+.storiesimgLive Img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.status p{
+    color: #7A2E15;
+    font-weight: bolder;
+}
+
+.containerstoryBlock{
+     text-align: center;
+}
+
+
+
+.textStory{
+    font-size: 12px;
+}
+
+
+
+
+
+.information{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    
+    
+}
+
+.informationRight{
+    display: flex;
+}
+.profileName{
+    color:#519259;
+    font-weight: bold;
+    
+}
+
+.date{
+    font-style: italic;
+    color: #7C7D7C;
+    font-size: 12px;
+    
+    
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.card{
+    margin-top: 80px;
+    height: 450px;
+
+    
+    
+}
+
+.logoFollowImg{
+    width: 18px;
+    height: 18px;
+    
+    
+}
+
+.logoFollow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photoRecette{
+    width: 330px;
+    height: 330px;
+    border-radius: 6px;
+    
+
+}
+
+.photoRecette img{
+    width: 330px;
+    height: 330px;
+    border-radius: 6px;
+    object-fit: cover;
+
+}
+
+.photoProfile{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.photoProfile img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+
+
+.recetteDescription {
+    display: flex;
+    width: 330px;
+}
+
+.point{
+    width: 84px;
+    height: 40pxs;
+    background-color: #FFD741;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.point p{
+    font-size: 22px; 
+    color: white;
+    font-weight: bolder;
+    
+}
+
+.logoRadcoin{
+    width: 26;
+    height: 34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descriptionUser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li.nomRecette{
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+li.description{
+    color: #7C7D7C;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.textSecondaire{
+    margin-top: 100px;
+}
+
+.cardcontainerDefis{
+    background-color: tomato;
+    display: flex;
+}
+
+
+.cardcontainerChallenge{
+    display: flex;
+    justify-content: center;
+}
+
+.mediaContainer{
+    display: flex;
+    background-color: turquoise;
+    justify-content: space-between;
+    border-radius: 6px;
+    height: 30px;
+
+}
+
+.photo_video{
+    display: flex;
+    
+}
+
+.navBottom ul{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.inputContainer{
+    display: flex;
+    justify-content: center;
+}
