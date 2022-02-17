@@ -49,14 +49,11 @@ table {
 
 body {
     background-color: #FEFDFD;
-    margin-left: 6px;
-    margin-right: 6px;
-    margin-top: 3px;
     font-family: 'Poppins', sans-serif;
 }
 
 
-header ul{
+.headerMobile ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -65,13 +62,15 @@ header ul{
 }
 
 
-header li{
+.headerMobile li{
     
     color: #519259;
     
 }
 
-
+.headerDesktop ul{
+    display: none;
+}
 
 
 
@@ -251,10 +250,7 @@ header li{
 }
 
 .logoRadcoin{
-    width: 26;
-    height: 34;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -318,7 +314,7 @@ li.description{
 .navBottom ul{
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
 }
 
 .navBottom{
@@ -356,7 +352,7 @@ input::placeholder{
 
 button{
     border: none;
-    background-color: white;
+    background-color: #FEFDFD;
 }
 
 .photos_videos_nav ul{
@@ -394,7 +390,7 @@ button{
         margin-left: 32px;
         margin-top: 30px;
         display: flex;
-        gap: 20px
+        gap: 120px;
 
         
     }
@@ -402,10 +398,7 @@ button{
 
     .photosNav{
         display: flex;
-        justify-content: center;
         align-items: center;
-        background-color: #519259;
-        color: white;
         height: 30px;
         width: 100px;
         border-radius: 6px;
@@ -421,4 +414,25 @@ button{
         border-radius: 6px;
         
     }
+
+    .headerDesktop ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #519259;
+        min-height: 55px;
+    }
+
+    .headerDesktop li{
+        color: white;
+    }
+
+    .headerMobile ul{
+        display: none;
+        
+    }
+
+
+        
+
 }
