@@ -48,6 +48,7 @@ table {
 }
 
 body {
+
     background-color: #FEFDFD;
     font-family: 'Poppins', sans-serif;
 }
@@ -362,7 +363,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    width: 100%;
+    
 }
 
 
@@ -379,7 +380,7 @@ input.Search{
     border: 1px solid #519259;
     border-radius: 6px;
     height: 25px;
-    width: 60%;
+    width: 300px;
     
 }
 
@@ -394,9 +395,10 @@ button{
 }
 
 .cardcontainerChallenge{
-    background-color:  #FA8C4B;
+    
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-top: 30px;
 }
 
 .defisBlock{
@@ -404,18 +406,21 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    
 }
 
+
 .defisItems{
-    background-color: white;
+    background-color: #FA8C4B;
     border-radius: 6px;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    color: #FA8C4B;
+    color: white;
+    
     
 
 }
@@ -463,13 +468,14 @@ button{
     left: 30%;
 }
 .defisBlock h1{
-    color: white;
+    margin-bottom: 10px;
     text-align: center;
 }
 
 .defisitemsContainer p{
     text-align: center;
-    color: white;
+    margin-bottom: 10px;
+    
 }
 
 .moreInformations{
@@ -478,6 +484,8 @@ button{
 }
 .moreInformations p{
     font-style: italic;
+    color: #7C7D7C;
+    margin-right: 9px;
 }
 
 .navHeader{
@@ -489,6 +497,11 @@ button{
     
 }
 
+.defisitemsContainer{
+    
+    border: 1px solid #FA8C4B;
+        
+}
 
 .navHeader ul{
     display: flex;
@@ -518,12 +531,13 @@ header{
 }
 
 
-.nomRecette{
-    overflow: hidden;
-}
+
 
 .headerPrincipale{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4%;
 }
 
 
@@ -599,26 +613,25 @@ header{
     }
 
     .cardcontainerChallenge{
+        width: 100%;
         display: flex;
         justify-content: space-evenly;
 
     }
 
     .defisitemsContainer{
+        width: 30%;
         display: flex;
+        justify-content: center;
+        
         flex-direction: column;
         
     }
 
-    .navHeader{
-        position: initial;
-    }
+
 
     .header {
-        justify-content: flex-end;
-        gap: 0px;
-
-        
+        justify-content: space-between; 
     }
 
 
@@ -629,6 +642,7 @@ header{
 
     .navHeader{
         width: 20vw;
+        position: initial;
         
     }
     
@@ -639,11 +653,11 @@ header{
         list-style: none;
         justify-content: center;
         gap: 13%;
-        background: rgba(255, 255, 255, 1);
-        box-shadow: 0;
-        backdrop-filter: 0;
-        -webkit-backdrop-filter: 0;
-        border: 1px solid rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 rgb(0 0 0 / 10%);
 
+    }
+
+    .headerPrincipale{
+        gap: 30px;
     }
 }
