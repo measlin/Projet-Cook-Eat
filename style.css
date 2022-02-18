@@ -295,9 +295,10 @@ body {
     border-radius: 6px;
     height: 30px;
     width: 85%;
-    position: sticky;
+    position: fixed;
     bottom: 70px;
     left: 28px;
+
     
 
 }
@@ -483,6 +484,7 @@ button{
     position: fixed;
     bottom: 0px;
     width: 100vw;
+    z-index: 15;
     
     
 }
@@ -494,7 +496,7 @@ button{
     justify-content: center;
     gap: 13%;
     background: rgba(255, 255, 255, 0.17);
-   
+    
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.3px);
     -webkit-backdrop-filter: blur(5.3px);
@@ -505,7 +507,19 @@ button{
     display: flex;
 }
 
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    gap: 25%;
+}
 
+
+.nomRecette{
+    overflow: hidden;
+}
 
 @media (min-width: 500px){
 
@@ -588,5 +602,21 @@ button{
         display: flex;
         flex-direction: column;
         
+    }
+
+    .navHeader{
+        position: initial;
+    }
+
+    .header {
+        justify-content: flex-end;
+        gap: 0px;
+
+        
+    }
+
+    .logoCookEat{
+        order: -1;
+       
     }
 }
