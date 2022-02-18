@@ -53,7 +53,7 @@ body {
 }
 
 
-.headerMobile ul{
+.header ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -62,15 +62,8 @@ body {
 }
 
 
-.headerMobile li{
-    
-    color: #519259;
-    
-}
 
-.headerDesktop ul{
-    display: none;
-}
+
 
 
 
@@ -205,6 +198,7 @@ body {
     width: 330px;
     height: 330px;
     border-radius: 6px;
+    position: relative;
     
 
 }
@@ -239,7 +233,9 @@ body {
 
 .recetteDescription {
     display: flex;
-    width: 330px;
+    max-width: 330px;
+    max-height: 50px;
+
 }
 
 .point{
@@ -271,14 +267,14 @@ body {
     justify-content: center;
 }
 
-li.nomRecette{
+.nomRecette{
     color: black;
     font-size: 18px;
     font-weight: bolder;
     margin-top: 5px;
 }
 
-li.description{
+.descriptionRecette{
     color: #7C7D7C;
     font-style: italic;
     font-size: 12px;
@@ -380,6 +376,7 @@ li.description{
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    width: 100%;
 }
 
 
@@ -392,11 +389,12 @@ input::placeholder{
     
 }
 
-.Search{
+input.Search{
     border: 1px solid #519259;
     border-radius: 6px;
-    width: 300px;
     height: 25px;
+    width: 60%;
+    
 }
 
 button{
@@ -422,37 +420,79 @@ button{
     
 }
 
-.photoDefis{
-    width: 330px;
-    height: 330px;
+.defisItems{
+    background-color: white;
     border-radius: 6px;
+    margin-bottom: 10px;
+
+}
+
+.photoDefis{
+    width: 300px;
+    height: 220px;
+    position: relative;
+    
+   
     
 
 }
 
 .photoDefis .imageDefis{
-    width: 330px;
-    height: 330px;
-    border-radius: 6px;
+    width: 300px;
+    height: 220px;
+    
     object-fit: cover;
 
 }
 
-.categoriesGrid{
-    display: block;
+.defisDescription{
+    display: flex;
+    max-width: 300px;
+    max-height: 50px;
+    background-color: white;;
+}
+
+.logofavorisTemps{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5%;
+    z-index: 10;
+    position: absolute;
+    gap: 137%;
+    left: 30%;
+}
+
+.logofavoristempsDefis{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5%;
+    z-index: 10;
+    position: absolute;
+    gap: 120%;
+    left: 30%;
+}
+
+
+.moreInformations{
+    display: flex;
+    justify-content: flex-end;
+}
+.moreInformations p{
+    font-style: italic;
+}
+
+.navHeader{
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
     
 }
 
-.gridItem{
-    background-color: white;
-    color: #FA8C4B;
+.navHeader ul{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    border: 1px solid black;
-    margin-bottom: 10px;
-    
+    list-style: none;
 }
 
 
@@ -480,6 +520,8 @@ button{
 
     .card{
         margin: 30px;
+        display: flex;
+        flex-direction: column;
     }
 
     .photos_videos_nav ul{
@@ -525,58 +567,16 @@ button{
         cursor: pointer;
     }
 
-    .headerDesktop ul{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #519259;
-        min-height: 55px;
-        
-    }
-
-
-    .headerdesktopMiddle {
-        display: flex;
-        align-items: center;
-        width: 300px;
-        justify-content: space-between;
-        
-
-
-    }
-
-    .headerDesktop li{
-        cursor: pointer;
     }
 
 
 
-    .headerdesktopEnd {
-        display: flex;
-        align-items: center;
-        width: 130px;
-        justify-content: space-between;
-        
-
-    }
-
-
-    .headerMobile ul{
-        display: none;
-        
-    }
-
-    input.Search{
-        width: 500px;
-    }
-
+    
     .cardcontainerChallenge{
         display: flex;
-        flex-direction: row;
     }
 
     
 
 
 
-}
