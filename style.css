@@ -176,16 +176,24 @@ body {
     justify-content: center;
 
 }
-.card{
-    margin:30px   
+
+.partagerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
 }
 
-.logoFollowImg{
-    width: 18px;
-    height: 18px;
-    
-    
+.partagerLogo{
+    display: flex;
+    align-items: center;
 }
+
+.card{
+    margin-top:30px;  
+}
+
+
 
 .logoFollow{
     display: flex;
@@ -201,14 +209,17 @@ body {
 
 }
 
-.photoRecette img{
+.photoRecette .imageRecette{
     width: 330px;
     height: 330px;
     border-radius: 6px;
     object-fit: cover;
 
 }
-
+.logoFavoris{
+    position: absolute;
+    
+}
 .photoProfile{
     width: 60px;
     height: 60px;
@@ -264,6 +275,7 @@ li.nomRecette{
     color: black;
     font-size: 18px;
     font-weight: bolder;
+    margin-top: 5px;
 }
 
 li.description{
@@ -273,7 +285,12 @@ li.description{
 }
 
 .textSecondaire{
-    margin-top: 100px;
+    padding: 30px;
+}
+
+.textSecondaire h1{
+    color: white;
+    font-size: 20px;
 }
 
 .mediaContainer{
@@ -284,6 +301,7 @@ li.description{
     width: 85%;
     position: sticky;
     bottom: 70px;
+    left: 28px;
     
 
 }
@@ -292,7 +310,7 @@ li.description{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40%;
+    gap: 25%;
     background: rgba(255, 255, 255, 0.17);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -300,15 +318,46 @@ li.description{
     -webkit-backdrop-filter: blur(5.3px);
     border: 1px solid rgba(255, 255, 255, 0.21);
     width: 70%;
+    height: 100%;
 
     
 }
 
+.photoBox{
+    background-color: #519259;
+    border-radius: 16px;
+    width: 30%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.videoBox{
+    background-color: #519259;
+    border-radius: 16px;
+    width: 30%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
 .add{
-    width: 50px;
-    height: 50px;
+    width: 10%;
+    height: 100%;
     border-radius: 50%;
-    background-color: tomato;
+    background-color: #519259;
+}
+
+.add p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
 }
 
 .navBottom ul{
@@ -360,6 +409,53 @@ button{
     
 }
 
+.cardcontainerChallenge{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:  #FA8C4B;
+    
+    height: 100vh;
+    
+    
+}
+
+.photoDefis{
+    width: 330px;
+    height: 330px;
+    border-radius: 6px;
+    
+
+}
+
+.photoDefis .imageDefis{
+    width: 330px;
+    height: 330px;
+    border-radius: 6px;
+    object-fit: cover;
+
+}
+
+.categoriesGrid{
+    display: block;
+    
+}
+
+.gridItem{
+    background-color: white;
+    color: #FA8C4B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    
+}
+
+
 @media (min-width: 500px){
 
     .containerStory{
@@ -387,7 +483,7 @@ button{
     }
 
     .photos_videos_nav ul{
-        margin-left: 32px;
+        justify-content: center;
         margin-top: 30px;
         display: flex;
         gap: 120px;
@@ -402,6 +498,9 @@ button{
         height: 30px;
         width: 100px;
         border-radius: 6px;
+        color: #519259;
+        cursor: pointer;
+        font-size: 20px;
     }
 
     .videosNav{
@@ -412,6 +511,8 @@ button{
         height: 30px;
         width: 100px;
         border-radius: 6px;
+        cursor: pointer;
+        font-size: 20px;
         
     }
 
@@ -421,18 +522,52 @@ button{
         align-items: center;
         background-color: #519259;
         min-height: 55px;
+        
+    }
+
+
+    .headerdesktopMiddle {
+        display: flex;
+        align-items: center;
+        width: 300px;
+        justify-content: space-between;
+        
+
+
     }
 
     .headerDesktop li{
-        color: white;
+        cursor: pointer;
     }
+
+
+
+    .headerdesktopEnd {
+        display: flex;
+        align-items: center;
+        width: 130px;
+        justify-content: space-between;
+        
+
+    }
+
 
     .headerMobile ul{
         display: none;
         
     }
 
+    input.Search{
+        width: 500px;
+    }
 
-        
+    .cardcontainerChallenge{
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+
+
 
 }
