@@ -511,15 +511,21 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 95vw;
     height: 10vh;
-    gap: 25%;
+    gap: 14%;
+    margin-inline: auto;
 }
 
 
 .nomRecette{
     overflow: hidden;
 }
+
+.headerPrincipale{
+    display: flex;
+}
+
 
 @media (min-width: 500px){
 
@@ -615,8 +621,29 @@ header{
         
     }
 
+
+
     .logoCookEat{
         order: -1;
-       
+    }
+
+    .navHeader{
+        width: 20vw;
+        
+    }
+    
+
+    .navHeader ul{
+
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 13%;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0;
+        backdrop-filter: 0;
+        -webkit-backdrop-filter: 0;
+        border: 1px solid rgba(255, 255, 255, 0);
+
     }
 }
