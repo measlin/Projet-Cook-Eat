@@ -233,8 +233,8 @@ body {
 
 .recetteDescription {
     display: flex;
-    max-width: 330px;
-    max-height: 50px;
+    justify-content: space-between;
+    
 
 }
 
@@ -356,22 +356,7 @@ body {
     font-size: 32px;
 }
 
-.navBottom ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.navBottom{
-    position: sticky;
-    bottom: 1px;
-    background: rgba(255, 255, 255, 0.17);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.3px);
-    -webkit-backdrop-filter: blur(5.3px);
-    border: 1px solid rgba(255, 255, 255, 0.21);
-}
 .inputContainer{
     display: flex;
     justify-content: center;
@@ -408,22 +393,29 @@ button{
 }
 
 .cardcontainerChallenge{
-    
+    background-color:  #FA8C4B;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.defisBlock{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    background-color:  #FA8C4B;
-    
-   
-    
-    
+    margin-bottom: 30px;
 }
 
 .defisItems{
     background-color: white;
     border-radius: 6px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #FA8C4B;
+    
 
 }
 
@@ -432,15 +424,11 @@ button{
     height: 220px;
     position: relative;
     
-   
-    
-
 }
 
 .photoDefis .imageDefis{
     width: 300px;
     height: 220px;
-    
     object-fit: cover;
 
 }
@@ -473,7 +461,15 @@ button{
     gap: 120%;
     left: 30%;
 }
+.defisBlock h1{
+    color: white;
+    text-align: center;
+}
 
+.defisitemsContainer p{
+    text-align: center;
+    color: white;
+}
 
 .moreInformations{
     display: flex;
@@ -494,6 +490,11 @@ button{
     display: flex;
     list-style: none;
 }
+
+.prix{
+    display: flex;
+}
+
 
 
 @media (min-width: 500px){
@@ -567,16 +568,15 @@ button{
         cursor: pointer;
     }
 
-    }
-
-
-
-    
     .cardcontainerChallenge{
         display: flex;
+        justify-content: space-evenly;
+
     }
 
-    
-
-
-
+    .defisitemsContainer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
