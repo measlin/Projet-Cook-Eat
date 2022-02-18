@@ -417,7 +417,7 @@ button{
     align-items: center;
     background-color:  #FA8C4B;
     
-    height: 100vh;
+   
     
     
 }
@@ -503,6 +503,9 @@ button{
         font-size: 20px;
     }
 
+    .photosNav p{
+        text-decoration: underline;
+    }
     .videosNav{
         
         display: flex;
@@ -514,6 +517,12 @@ button{
         cursor: pointer;
         font-size: 20px;
         
+    }
+
+    .add_nav{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
     }
 
     .headerDesktop ul{
