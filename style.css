@@ -47,6 +47,26 @@ table {
 	border-spacing: 0;
 }
 
+
+@font-face{
+    font-family: "Poppins";
+    src: url("Fonts/Poppins-Regular.woff2"), url("Fonts/Poppins-Regular.woff");
+    
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("Fonts/Poppins-Italic.woff2"), url("Fonts/Poppins-Italic.woff");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("Fonts/Poppins-Bold.woff2"), url("Fonts/Poppins-Bold.woff");
+    font-weight: bold;
+}
+
+
 body {
 
     background-color: #FEFDFD;
@@ -75,6 +95,7 @@ body {
     color: black;
     font-size: 20px;
     margin-top: 30px;
+    font-style: italic;
 }
 
 .containerStory{
@@ -124,10 +145,12 @@ body {
 .status p{
     color: #7A2E15;
     font-weight: bolder;
+    
 }
 
 .containerstoryBlock{
      text-align: center;
+     cursor: pointer;
 }
 
 
@@ -153,7 +176,7 @@ body {
 }
 .profileName{
     color:#519259;
-    font-weight: bold;
+    
     
 }
 
@@ -181,6 +204,7 @@ body {
 .partagerLogo{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .card{
@@ -193,6 +217,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    
 }
 
 .photoRecette{
@@ -200,6 +226,7 @@ body {
     height: 330px;
     border-radius: 6px;
     position: relative;
+    
     
 
 }
@@ -214,12 +241,14 @@ body {
 .logoFavoris{
     position: absolute;
     
+    
 }
 .photoProfile{
     width: 60px;
     height: 60px;
     border-radius: 50%;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .photoProfile img{
@@ -260,6 +289,7 @@ body {
 .logoRadcoin{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .descriptionUser{
@@ -330,6 +360,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
+    cursor: pointer;
 }
 
 .videoBox{
@@ -341,21 +372,24 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
+    cursor: pointer;
 
 }
 
 .add{
-    width: 10%;
+    width: 20%;
     height: 100%;
-    border-radius: 50%;
+    border-radius: 16px;
     background-color: #519259;
+    cursor: pointer;
 }
 
 .add p{
     display: flex;
     justify-content: center;
+    padding-top: 7px;
     color: white;
-    font-size: 32px;
+    
 }
 
 
@@ -382,11 +416,13 @@ input.Search{
     height: 25px;
     width: 300px;
     
+    
 }
 
 .searchButton{
     border: none;
     background-color: #FEFDFD;
+    cursor: pointer;
 }
 
 .photos_videos_nav ul{
@@ -411,6 +447,7 @@ input.Search{
 }
 
 
+
 .defisItems{
     background-color: #FA8C4B;
     border-radius: 6px;
@@ -430,6 +467,7 @@ input.Search{
     width: 300px;
     height: 220px;
     position: relative;
+    cursor: pointer;
     
 }
 
@@ -471,6 +509,8 @@ input.Search{
 .defisBlock h1{
     margin-bottom: 10px;
     text-align: center;
+    color:#FA8C4B;
+    font-weight: bold;
 }
 
 .defisitemsContainer p{
@@ -483,11 +523,13 @@ input.Search{
 .moreInformations{
     display: flex;
     justify-content: flex-end;
+    margin-top: 30px;
 }
 .moreInformations p{
     font-style: italic;
     color: #7C7D7C;
     margin-right: 9px;
+    cursor: pointer;
 }
 
 .navHeader{
@@ -516,6 +558,7 @@ input.Search{
     backdrop-filter: blur(5.3px);
     -webkit-backdrop-filter: blur(5.3px);
     border: 1px solid rgba(255, 255, 255, 0.21);
+    
 }
 
 .prix{
@@ -549,7 +592,7 @@ header{
     cursor: pointer;
     padding: 10px;
     border: none;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 @media (min-width: 500px){
@@ -602,7 +645,7 @@ header{
     }
 
     .photosNav p{
-        text-decoration: underline;
+        font-weight: bold;
     }
     .videosNav{
         
@@ -665,10 +708,19 @@ header{
         justify-content: center;
         gap: 13%;
         box-shadow: 0 0 0 rgb(0 0 0 / 10%);
+        cursor: pointer;
 
     }
 
     .headerPrincipale{
         gap: 30px;
+        cursor: pointer;
+    }
+
+   .searchButton:hover{
+    background-color:#FA8C4B;
+    border-radius: 6px;
+    transition: 0.3s
+    
     }
 }
