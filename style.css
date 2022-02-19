@@ -417,7 +417,7 @@ input.Search{
     
 }
 
-.searchButton{
+.searchBtn{
     border: none;
     background-color: #FEFDFD;
     cursor: pointer;
@@ -715,10 +715,10 @@ header{
         cursor: pointer;
     }
 
-   .searchButton:hover{
-    background-color:#FA8C4B;
+   .searchBtn:hover{
+    border:1px solid #519259;
     border-radius: 6px;
-    transition: 0.3s
+    transition: 0.3s;
     
     }
 }
