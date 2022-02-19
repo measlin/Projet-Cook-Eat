@@ -403,6 +403,8 @@ body {
 input::placeholder{
     color: #7C7D7C;
     font-style: italic;
+    font-size: 14px;
+    
     
     
     
@@ -411,7 +413,7 @@ input::placeholder{
 input.Search{
     border: 1px solid #519259;
     border-radius: 6px;
-    height: 25px;
+    height: 30px;
     width: 300px;
     
     
@@ -697,6 +699,7 @@ header{
 
     .header {
         justify-content: space-between; 
+        
     }
 
 
@@ -771,17 +774,17 @@ header{
         font-weight: bold;
         display: flex;
         justify-content: center;
-        
+
     }
     .classement p{
-        font-size: 12px;
+        font-size: 14px;
         color: #7C7D7C;
         font-style: italic;
         cursor: pointer;
     }
 
     .cookerName {
-        font-size: 14px;
+        font-size: 16px;
         font-style: italic;
     }
 
