@@ -384,7 +384,7 @@ input.Search{
     
 }
 
-button{
+.searchButton{
     border: none;
     background-color: #FEFDFD;
 }
@@ -420,6 +420,7 @@ button{
     align-items: center;
     padding: 10px;
     color: white;
+    cursor: pointer;
     
     
 
@@ -475,6 +476,7 @@ button{
 .defisitemsContainer p{
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 10px;
     
 }
 
@@ -540,6 +542,15 @@ header{
     gap: 4%;
 }
 
+.buttondefis{
+    background-color:#FA8C4B;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+}
 
 @media (min-width: 500px){
 
