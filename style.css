@@ -583,15 +583,28 @@ header{
     gap: 4%;
 }
 
-.buttondefis{
+.participerBtn{
     background-color:#FA8C4B;
     color: white;
     border-radius: 6px;
     cursor: pointer;
     padding: 10px;
     border: none;
-    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
 }
+
+.cookerContainer{
+    display: none;
+
+}
+
+.cooker{
+    display: none;
+
+}
+
+
 
 @media (min-width: 500px){
 
@@ -720,5 +733,61 @@ header{
     border-radius: 6px;
     transition: 0.3s;
     
+    }
+
+    .cookerContainer{
+        border: 1px solid #FA8C4B;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 30px;
+    
+    }
+    
+    .cooker{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    .cookerPhoto{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #7A2E15;
+        border: 2px solid #FA8C4B
+    }
+
+    .cookerPhoto img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .cookerContainer h1{
+        color: #FA8C4B;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .classement p{
+        font-size: 12px;
+        color: #7C7D7C;
+        font-style: italic;
+        cursor: pointer;
+    }
+
+    .cookerName {
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    .cookerPts{
+        font-size: 11px;
+        color: #7C7D7C;
+        font-style: italic;
     }
 }
