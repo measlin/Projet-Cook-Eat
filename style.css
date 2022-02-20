@@ -69,6 +69,7 @@ table {
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #FEFDFD;
 }
 
 
@@ -395,6 +396,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+
     
 }
 
@@ -404,6 +406,7 @@ input::placeholder{
     color: #7C7D7C;
     font-style: italic;
     font-size: 14px;
+    background-color: #FEFDFD;
     
     
     
@@ -415,6 +418,7 @@ input.Search{
     border-radius: 6px;
     height: 30px;
     width: 300px;
+    background-color: #FEFDFD;
     
     
 }
@@ -606,6 +610,9 @@ header{
 
 }
 
+.copyright{
+    display: none;
+}
 
 
 @media (min-width: 500px){
@@ -618,6 +625,8 @@ header{
     }
 
 }
+
+
 
 @media (min-width: 800px){
 
@@ -792,5 +801,10 @@ header{
         font-size: 11px;
         color: #7C7D7C;
         font-style: italic;
+    }
+
+    .copyright{
+        display: flex;
+        justify-content: center;
     }
 }
