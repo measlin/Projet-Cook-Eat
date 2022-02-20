@@ -149,7 +149,7 @@ body {
 
 .containerstoryBlock{
      text-align: center;
-     cursor: pointer;
+     
 }
 
 
@@ -190,6 +190,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 20px;
 
 }
 
@@ -203,11 +204,13 @@ body {
 .partagerLogo{
     display: flex;
     align-items: center;
-    cursor: pointer;
+    
 }
 
 .card{
-    margin-top:30px;  
+    
+   
+    padding: 10px;  
 }
 
 
@@ -216,7 +219,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    
     
 }
 
@@ -247,7 +250,7 @@ body {
     height: 60px;
     border-radius: 50%;
     margin-right: 10px;
-    cursor: pointer;
+    
 }
 
 .photoProfile img{
@@ -288,7 +291,7 @@ body {
 .logoRadcoin{
     display: flex;
     align-items: center;
-    cursor: pointer;
+    
 }
 
 .descriptionUser{
@@ -359,7 +362,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-    cursor: pointer;
+    
 }
 
 .videoBox{
@@ -371,7 +374,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-    cursor: pointer;
+    
 
 }
 
@@ -426,7 +429,7 @@ input.Search{
 .searchBtn{
     border: none;
     background-color: #FEFDFD;
-    cursor: pointer;
+    
 }
 
 .photos_videos_nav ul{
@@ -461,7 +464,7 @@ input.Search{
     align-items: center;
     padding: 10px;
     color: white;
-    cursor: pointer;
+    
     
     
 
@@ -533,7 +536,7 @@ input.Search{
     font-style: italic;
     color: #7C7D7C;
     margin-right: 9px;
-    cursor: pointer;
+    
 }
 
 .navHeader{
@@ -593,7 +596,7 @@ header{
     background-color:#FA8C4B;
     color: white;
     border-radius: 6px;
-    cursor: pointer;
+    
     padding: 10px;
     border: none;
     margin-bottom: 30px;
@@ -682,10 +685,18 @@ header{
         
     }
 
+    .videosNav:hover{
+        color:#519259;
+    }
+
     .add_nav{
         display: flex;
         align-items: center;
         cursor: pointer;
+        
+    }
+    .add_nav:hover{
+        color: #519259;
     }
 
     .cardcontainerChallenge{
@@ -704,6 +715,17 @@ header{
         
     }
 
+    .defisItems:hover{
+        background-color: #FFD741;
+        transition: 0,3s;
+        cursor: pointer;
+    }
+
+    .card:hover{
+        -webkit-box-shadow: 0px 12px 21px 3px rgba(53,53,53,0.51); 
+        box-shadow: 0px 12px 21px 3px rgba(53,53,53,0.51);  
+        cursor: pointer;
+    }
 
 
     .header {
@@ -803,8 +825,34 @@ header{
         font-style: italic;
     }
 
+    .participerBtn:hover{
+        background-color: #FFD741;
+        transition: 0.3s;
+    }
+
     .copyright{
         display: flex;
         justify-content: center;
+    }
+
+    .moreInformations p{
+        cursor: pointer;
+        
+    }
+
+    .searchBtn {
+        cursor: pointer;
+    }
+
+    .logoRadcoin{
+        cursor: pointer;
+    }
+
+    .containerstoryBlock{
+        cursor: pointer;
+    }
+
+    .cookerPhoto{
+        cursor: pointer;
     }
 }
