@@ -736,8 +736,7 @@ header{
     }
 
     .card:hover{
-        -webkit-box-shadow: 0px 12px 21px 3px rgba(53,53,53,0.51); 
-        box-shadow: 0px 12px 21px 3px rgba(53,53,53,0.51);  
+
         cursor: pointer;
     }
 
