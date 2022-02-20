@@ -855,4 +855,25 @@ header{
     .cookerPhoto{
         cursor: pointer;
     }
+
+    .pointDefis{
+        width: 84px;
+        height: 40pxs;
+        background-color: #FFD741;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        
+        
+    }
+    
+    .pointDefis p{
+        font-size: 16px; 
+        color: white;
+        font-weight: bolder;
+        
+    }
 }
